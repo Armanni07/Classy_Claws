@@ -1,0 +1,115 @@
+.search-page {
+  right: 0;
+  top: 3.5rem;
+  width: 100dvw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  color: #b5a2a8;
+  position: absolute;
+  align-items: center;
+  font-family: Aboreto;
+  background-color: #2c2a3e;
+  height: calc(100dvh - 3.5rem);
+  justify-content: space-evenly;
+  animation: ZoomIn 0.3s linear 0s 1 normal forwards;
+
+  .close {
+    top: 1rem;
+    right: 0;
+    color: #ff0000;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1rem solid;
+  }
+
+  .page-name {
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 5rem;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding-right: 1rem;
+    background-color: transparent;
+  }
+
+  .product-list {
+    gap: 1rem;
+    display: flex;
+    width: 20.7rem;
+    height: 14.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .product-info {
+      padding: 0;
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      h4 {
+        color: #fff3f9;
+        font-family: "Abeezee";
+      }
+
+      span {
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      .cart-count {
+        margin: 0;
+        padding: 0;
+        width: 7rem;
+        height: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        border: 0.1rem solid #b5a2a8;
+        justify-content: space-between;
+
+        .nums {
+          padding: 0;
+          width: 2rem;
+          height: 2rem;
+          color: #ffb3c6;
+          border-radius: 50%;
+        }
+      }
+
+      button {
+        width: 7rem;
+        height: 2rem;
+        border: none;
+        border-radius: 0.2rem;
+        background-color: #ffb3c6;
+      }
+    }
+  }
+  .product-list {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .active {
+      color: #ffb3c6;
+      font-size: 1.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

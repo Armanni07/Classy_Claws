@@ -1,0 +1,35 @@
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.65;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0.65;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #ffb3c6;
+  transition: all 0.3s ease-in-out;
+  animation: fadeout 1s linear 1.8s 1 normal forwards;
+
+  img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.65;
+    object-fit: cover;
+    animation: animate 1s linear 0s 1 normal forwards;
+  }
+}

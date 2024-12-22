@@ -1,0 +1,112 @@
+.about-section {
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  height: 100dvh;
+  overflow: scroll;
+  align-items: center;
+  width: calc(100dvw - 7rem);
+  background-color: #2c2a3e;
+  justify-content: space-between;
+
+  img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @media screen and (max-width: 900px) {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @media screen and (max-width: 1250px) {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+
+  .info-card {
+    gap: 2rem;
+    width: 19rem;
+    height: 19rem;
+    display: flex;
+    padding: 0 1rem;
+    color: #fff3f9;
+    text-wrap: balance;
+    border-radius: 1rem;
+    // align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff3f949;
+
+    h3 {
+      font-family: "Aboreto";
+    }
+
+    p {
+      text-wrap: pretty;
+      font-family: "Abeezee";
+    }
+
+    &:last-child {
+      position: relative;
+    }
+
+    @media screen and (max-width: 900px) {
+      gap: 0.5rem;
+      width: 12rem;
+      height: 12rem;
+
+      h3 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
+
+    @media screen and (max-width: 1250px) {
+      gap: 1rem;
+      width: 15rem;
+      height: 15rem;
+
+      h3 {
+        font-size: 1.2dvw;
+      }
+
+      p {
+        font-size: 1dvw;
+      }
+    }
+  }
+
+  .info-card-register {
+    right: 0;
+    top: 25rem;
+    width: 40rem;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-family: "Abeezee";
+    }
+
+    button {
+      width: 12rem;
+      height: 2.5rem;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 0.4rem;
+      font-family: "Aboreto";
+      background-color: #ffb3c6;
+    }
+  }
+
+  &.in-view {
+    animation: SliderLeft 1s linear 0s 1 normal forwards;
+  }
+}

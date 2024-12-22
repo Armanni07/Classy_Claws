@@ -1,0 +1,159 @@
+.hero-section {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  height: calc(100dvh - 3.5rem);
+  animation: Observe 1s linear 0s 1 normal forwards;
+
+  .hero-left,
+  .hero-right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    gap: 2rem;
+
+    p {
+      // width: 90%;
+      color: #b5a2a8;
+      font-size: 5.5rem;
+      font-family: "Aboreto";
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 3.5rem;
+      }
+    }
+
+    h2 {
+      width: 70%;
+      color: #fff3f9;
+      font-family: "Abeezee";
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .shop {
+      width: 13rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      border-radius: 0.5rem;
+      // padding-left: 0.1rem;
+      justify-content: center;
+      background-color: #ffb3c6;
+
+      .shop-text {
+        width: 10rem;
+        display: flex;
+        height: 2.7rem;
+        color: #fff3f9;
+        align-items: center;
+        justify-content: center;
+        background-color: #2c2a3e;
+        font-family: "Alegreya Sans";
+        border-radius: 0.3rem 0 0 0.3rem;
+      }
+
+      svg {
+        width: 2.7rem;
+        height: 2.7rem;
+        fill: #3b003b;
+        justify-self: end;
+      }
+    }
+  }
+
+  .hero-right {
+    gap: 2rem;
+    align-items: end;
+    position: relative;
+    padding-right: 4rem;
+
+    img {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 2rem;
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+
+    .background-text {
+      right: 10rem;
+      bottom: 5rem;
+      font-size: 15rem;
+      color: #b5a2a838;
+      position: absolute;
+      font-family: "Aboreto";
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 8rem;
+      }
+    }
+
+    .ad {
+      z-index: 9;
+      width: 30rem;
+      height: 10rem;
+      display: flex;
+      padding: 0 1rem;
+      color: #fff3f9;
+      position: relative;
+      border-radius: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #0000009e;
+      border: 0.1rem solid #d9a57e;
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-family: "Aboreto";
+      }
+
+      .button-link {
+        all: unset;
+        top: 12rem;
+        left: 29rem;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        border-radius: 50%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        background-color: #d9a57e;
+        border: 0.1rem solid #fff3f9;
+
+        .circle {
+          left: 15%;
+          bottom: 5.7rem;
+          color: #d9a57e;
+          position: absolute;
+          border-radius: 50%;
+          border: 0.1rem solid #fff3f9;
+
+        
+        }  @media (min-width: 576px) and (max-width: 767.98px) {
+            left: 14rem;
+          }
+      }
+
+      @media (min-width: 576px) {
+        width: 15rem;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      // align-items: center;
+    }
+  }
+}

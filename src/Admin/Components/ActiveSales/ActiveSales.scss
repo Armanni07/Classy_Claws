@@ -1,0 +1,108 @@
+.active-sales {
+  top: 0;
+  left: 0;
+  display: flex;
+  color: #fff3f9;
+  position: absolute;
+  flex-direction: column;
+  width: calc(100dvw - 7rem);
+  height: calc(100dvh - 3.5rem);
+  background-color: #fff3f9dc;
+  animation: FadeIn 0.2s linear 0s 1 normal forwards;
+
+  .active-sales-header {
+    height: 3.5rem;
+  }
+
+  .active-sales-container {
+    width: 40dvw;
+    display: flex;
+    align-self: flex-end;
+    overflow-y: scroll;
+    height: calc(100% - 3.5rem);
+    border-top-left-radius: 0.5rem;
+    animation: Slider 0.5s linear 0s 1 normal forwards;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 0.1rem solid;
+    }
+
+    .active-sales-left {
+      gap: 1rem;
+      width: 10rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #2c2a3e;
+
+      .active-sales-user-item {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 0.1rem solid #ffb3c6;
+        border-bottom: 0.1rem solid #ffb3c6;
+
+        h5 {
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    .active-sales-right {
+      gap: 2rem;
+      height: 100%;
+      display: flex;
+      overflow-y: scroll;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      width: calc(100% - 10rem);
+      background-color: #2c2a3e75;
+
+      button {
+        top: 0rem;
+        width: 15rem;
+        border: none;
+        height: 2.5rem;
+        align-self: end;
+        color: #fff3f9;
+        position: sticky;
+        z-index: 99999999;
+        font-size: 1.2rem;
+        min-height: 2.5rem;
+        border-radius: 0 0 0 0.3rem;
+        background-color: #2c2a3e;
+      }
+
+      .active-sales-item {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+
+        img {
+          width: 20rem;
+          height: 10rem;
+          border-radius: 0.5rem;
+        }
+
+        .active-sales-item-details {
+          gap: 1rem;
+          display: flex;
+          color: #000000;
+
+          span {
+            gap: 0.5rem;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

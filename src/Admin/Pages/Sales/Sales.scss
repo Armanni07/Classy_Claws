@@ -1,0 +1,79 @@
+.admin-sales {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  font-family: Aboreto;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100dvw - 7rem);
+  background-color: #fff3f9;
+  height: calc(100dvh - 3.5rem);
+  animation: FadeIn 0.5s linear 0s 1 normal forwards;
+
+  .sales-header-section {
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 4.5rem;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+
+    .sales-button {
+      width: 10rem;
+      height: 3rem;
+      border: none;
+      color: #fff3f9;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      border-radius: 0.3rem;
+      font-family: "Aboreto";
+      background-color: #8e3a59;
+    }
+  }
+
+  .admin-sales-container {
+    width: 95%;
+    display: flex;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    justify-content: center;
+    height: calc(100% - 4.5rem);
+    border: 0.1rem solid #ffb3c6;
+
+    table {
+      width: 100%;
+      height: auto;
+      text-align: start;
+      border-collapse: collapse;
+
+      th,
+      td {
+        text-align: start;
+        border-bottom: 0.1rem solid #ffb3c6;
+
+        &:first-child {
+          padding-left: 0.2rem;
+        }
+      }
+
+      th {
+        padding: 1rem 0;
+        border-bottom: 0.2rem solid #ffb3c6;
+      }
+
+      td {
+        align-items: center;
+        
+        img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 0.5rem;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

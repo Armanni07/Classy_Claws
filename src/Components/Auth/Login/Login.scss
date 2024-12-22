@@ -1,0 +1,101 @@
+.login {
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+  color: #fff3f9;
+  position: absolute;
+  background-color: #2c2a3ea4;
+  animation: FadeIn 0.2s linear 0s 1 normal forwards;
+
+  .login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: ZoomIn 0.3s linear 0s 1 forwards;
+
+    .login-close {
+      border-radius: 50%;
+      border: 0.1rem solid;
+    }
+
+    img {
+      left: 0;
+      top: 2%;
+      z-index: 1;
+      width: 100%;
+      opacity: 0.05;
+      object-fit: cover;
+      position: absolute;
+      height: calc(100vh - 3.5rem);
+    }
+
+    span {
+      gap: 3rem;
+      width: 35rem;
+      z-index: 999;
+      height: 25rem;
+      display: flex;
+      border-radius: 0.5rem;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #000000c6;
+
+      h2 {
+        display: flex;
+        align-items: center;
+        font-family: "Aboreto";
+      }
+
+      img {
+        opacity: 1;
+        width: 3rem;
+        height: 3rem;
+        position: static;
+      }
+
+      input {
+        width: 30rem;
+        height: 3rem;
+        border: none;
+        align-self: center;
+        padding-left: 0.5rem;
+        border-radius: 0.3rem;
+      }
+
+      button {
+        width: 10rem;
+        height: 3rem;
+        border: none;
+        color: #fff3f9;
+        font-size: 1.2rem;
+        align-self: center;
+        border-radius: 0.5rem;
+        font-family: sans-serif;
+        background-color: #000000;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #000000;
+          background-color: #ffb3c6;
+        }
+      }
+
+      .login-logo {
+        gap: 0;
+        height: 5rem;
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        flex-direction: row;
+        background-color: #000;
+        justify-content: space-between;
+        border-radius: 0.5rem 0.5rem 0 0;
+        border-bottom: 0.1rem solid #8e3a59;
+      }
+    }
+  }
+}

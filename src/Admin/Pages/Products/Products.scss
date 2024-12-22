@@ -1,0 +1,159 @@
+.admin-products {
+  overflow: hidden;
+  position: relative;
+  font-family: Aboreto;
+  width: calc(100vw - 7rem);
+  background-color: #fff3f9;
+  height: calc(100vh - 3.5rem);
+  
+  span {
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding-right: 1rem;
+    justify-content: space-between;
+    
+    .buttons {
+      width: 15rem;
+      height: auto;
+      display: flex;
+      
+      button {
+        width: 10rem;
+        border: none;
+        display: flex;
+        height: 2.5rem;
+        font-size: 1rem;
+        color: #fff3f9;
+        align-items: center;
+        font-family: Aboreto;
+        border-radius: 0.3rem;
+        justify-content: center;
+        background-color: #8e3a59;
+        
+        &:first-child {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  
+  .admin-products-container {
+    gap: 9rem;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .admin-product-list {
+      display: flex;
+      width: 20.7rem;
+      height: 14.5rem;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+
+      .admin-product-info {
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        //   align-items: center;
+        justify-content: space-between;
+
+        span {
+          width: auto;
+          height: auto;
+          display: block;
+          //   justify-self: end;
+        }
+      }
+    }
+
+    .admin-products-form {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff3f9a4;
+
+      h3 {
+        font-family: Aboreto;
+      }
+
+      form {
+        gap: 1rem;
+        width: 70rem;
+        height: 21.5rem;
+        display: flex;
+        align-items: center;
+        border-radius: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #0000009a;
+
+        span {
+          width: auto;
+          height: auto;
+        }
+
+        svg {
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          align-self: end;
+          color: #ff0000;
+          border-radius: 0 0.3rem;
+          background-color: #fff3f9;
+        }
+
+        span {
+          gap: 2rem;
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+
+          // input,
+          select {
+            width: 20rem;
+            height: 2rem;
+            border: none;
+            font-size: 1.2rem;
+            padding-left: 0.5rem;
+            border-radius: 0.3rem;
+          }
+        }
+
+        button {
+          width: 10rem;
+          border: none;
+          height: 2.5rem;
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+}

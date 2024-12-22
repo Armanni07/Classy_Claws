@@ -1,0 +1,118 @@
+.admin-categories {
+  gap: 1rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: calc(100vw - 7rem);
+  background-color: #fff3f9;
+  height: calc(100vh - 3.5rem);
+
+  span {
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding-right: 1rem;
+    justify-content: space-between;
+
+    h2 {
+      font-family: Aboreto;
+    }
+
+    button {
+      width: 10rem;
+      border: none;
+      display: flex;
+      height: 2.5rem;
+      font-size: 1rem;
+      color: #fff3f9;
+      align-items: center;
+      font-family: Aboreto;
+      border-radius: 0.3rem;
+      justify-content: center;
+      background-color: #8e3a59;
+    }
+  }
+
+  .admin-categories-container {
+    width: 100%;
+    height: 100%;
+
+    table {
+      width: 100%;
+      height: auto;
+      border: none;
+      border-collapse: collapse;
+
+      th {
+        font-family: Aboreto;
+      }
+
+      th,
+      td {
+        padding: 0.5rem 0;
+        text-align: start;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .admin-category-form {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff3f9a4;
+
+      h3 {
+        font-family: Aboreto;
+      }
+
+      form {
+        gap: 2rem;
+        width: 30rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        border-radius: 0.5rem;
+        flex-direction: column;
+        background-color: #0000009a;
+
+        svg {
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          align-self: end;
+          color: #ff0000;
+          border-radius: 0 0.5rem;
+          background-color: #fff3f9;
+        }
+
+        input {
+          width: 27rem;
+          height: 3rem;
+          border: none;
+          font-size: 1.2rem;
+          padding-left: 0.5rem;
+          border-radius: 0.3rem;
+        }
+
+        button {
+          width: 10rem;
+          border: none;
+          height: 2.5rem;
+          font-size: 1.2rem;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+}

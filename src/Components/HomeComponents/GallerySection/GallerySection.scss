@@ -1,0 +1,120 @@
+.gallery-section {
+  display: flex;
+  height: 100dvh;
+  align-items: center;
+  width: calc(100vw - 7rem);
+  background-color: #2c2a3e;
+
+  .gallery-images,
+  .socials {
+    flex: 1;
+    display: flex;
+    height: 38rem;
+  }
+
+  .gallery-images {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+
+    .gallery-left {
+      gap: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .image {
+        width: 12rem;
+        height: 12rem;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    }
+
+    .gallery-right {
+      //   gap: 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .image {
+        width: 17rem;
+        height: 24rem;
+        object-fit: cover;
+        border-radius: 1rem;
+
+        &:last-child {
+          height: 13rem;
+        }
+      }
+    }
+  }
+
+  .socials {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      width: 60%;
+      font-size: 4rem;
+      color: #b5a2a8;
+      font-family: "Aboreto";
+    }
+
+    p {
+      width: 50%;
+      color: #fff3f9;
+      font-family: "Abeezee";
+    }
+
+    .link {
+      width: 20rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      border: 0.1rem solid;
+      border-radius: 0.5rem;
+
+      h4 {
+        width: 100%;
+        padding: 0 0.5rem;
+        font-family: "Abeezee";
+      }
+
+      svg {
+        padding: 0.1rem;
+        font-size: 3rem;
+        border: 0.1rem solid;
+        border-right: none;
+        border-radius: 0.5rem;
+      }
+
+      &.insta {
+        color: #ffb3c6;
+      }
+
+      &.twitter {
+        color: #fff3f9;
+      }
+
+      &.tiktok {
+        color: #d9d9d9;
+      }
+    }
+  }
+
+  &.in-view {
+    .gallery-images{
+      animation: SliderLeft 1s linear 0s 1 normal forwards;
+    }
+
+    .socials {
+      animation: Slider 1s linear 0s 1 normal forwards;
+    }
+  }
+}

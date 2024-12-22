@@ -1,0 +1,47 @@
+.alert {
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  z-index: inherit;
+  color: #000000;
+  position: absolute;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #c85184;
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  animation: ZoomIn 0.3s linear 0s 1 normal forwards;
+
+  background: linear-gradient(
+    135deg,
+    #c85184 0%,
+    #ffb3c6 50%,
+    #fff3f9 75%,
+    #c85184 100%
+  );
+
+  .alert-close {
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    font-size: 2rem;
+    color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1rem solid;
+  }
+
+  .text {
+    // font-size: 1rem;
+    z-index: 999999;
+    text-align: center;
+  }
+
+  img {
+    z-index: 1;
+    opacity: 0.1;
+    width: 15rem;
+    object-fit: cover;
+    position: absolute;
+  }
+}

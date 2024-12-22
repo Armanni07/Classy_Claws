@@ -1,0 +1,105 @@
+.mail {
+  top: 3.5rem;
+  right: 0rem;
+  width: 100vw;
+  display: flex;
+  overflow: scroll;
+  color: #b5a2a8;
+  position: absolute;
+  align-items: center;
+  font-family: Aboreto;
+  justify-content: center;
+  height: calc(100vh - 3.5rem);
+  background-color: #2c2a3ea4;
+  animation: FadeIn 0.3s linear 0s 1 normal forwards;
+
+  .mail-container {
+    gap: 5dvh;
+    height: 50dvh;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    justify-content: space-between;
+
+    background: linear-gradient(
+      135deg,
+      #0a0a0a 0%,
+      #0f0f0f 50%,
+      #1e1e1e 75%,
+      #0a0a0a 100%
+    );
+    
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 6px rgba(0, 0, 0);
+    animation: SliderUp 1s linear 0s 1 normal forwards;
+
+    .mail-close {
+      top: 0;
+      left: 0;
+      margin: 1rem;
+      font-size: 2rem;
+      z-index: 9999999;
+      color: #ff0000a4;
+      position: absolute;
+      border-radius: 50%;
+      border: 0.1rem solid;
+    }
+
+    img {
+      bottom: -35%;
+      width: 45rem;
+      height: 45rem;
+      opacity: 0.1;
+      object-fit: cover;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    h2,
+    h3 {
+      width: 50%;
+      text-wrap: pretty;
+      text-align: center;
+    }
+
+    .text-area {
+      height: 20dvh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      textarea {
+        padding: 0.5rem;
+        z-index: 999999;
+        border-radius: 0.5rem;
+        font-family: "Aboreto";
+        background-color: #fff3f9;
+      }
+
+      button {
+        width: 15rem;
+        height: 2rem;
+        border: none;
+        z-index: 999999;
+        color: #2c2a3e;
+        font-size: 1.2rem;
+        border-radius: 5rem;
+        font-family: "Aboreto";
+        background: linear-gradient(
+          135deg,
+          #d46aa2 0%,
+          #c85184 50%,
+          #f1c1d2 75%,
+          #d46aa2 100%
+        );
+        background-blend-mode: overlay;
+        box-shadow: 0 4px 6px rgba(0, 0, 0);
+      }
+    }
+  }
+}
