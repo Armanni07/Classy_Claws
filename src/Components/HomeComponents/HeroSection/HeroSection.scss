@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   padding: 1rem;
+  overflow: hidden;
   height: calc(100dvh - 3.5rem);
   animation: Observe 1s linear 0s 1 normal forwards;
 
@@ -17,13 +18,20 @@
     gap: 2rem;
 
     p {
-      // width: 90%;
       color: #b5a2a8;
       font-size: 5.5rem;
       font-family: "Aboreto";
 
+      @media screen and (max-width: 576px) {
+        font-size: 1.8rem;
+      }
+
       @media (min-width: 576px) and (max-width: 767.98px) {
         font-size: 2.5rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 4.5rem;
       }
     }
 
@@ -32,8 +40,16 @@
       color: #fff3f9;
       font-family: "Abeezee";
 
+      @media screen and (max-width: 576px) {
+        font-size: 0.8rem;
+      }
+
       @media (min-width: 576px) and (max-width: 767.98px) {
         font-size: 1.1rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 1.5rem;
       }
     }
 
@@ -58,9 +74,19 @@
         font-family: "Alegreya Sans";
         border-radius: 0.3rem 0 0 0.3rem;
 
+        @media screen and (max-width: 576px) {
+          width: 10rem;
+          height: 1.8rem;
+        }
+
         @media (min-width: 576px) and (max-width: 767.98px) {
           width: 7rem;
           height: 1.9rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          width: 10rem;
+          height: 2.7rem;
         }
       }
 
@@ -71,10 +97,20 @@
         justify-self: end;
       }
 
+      @media screen and (max-width: 576px) {
+        width: 8rem;
+        height: 1.9rem;
+      }
+
       @media (min-width: 576px) and (max-width: 767.98px) {
         width: 10rem;
         height: 2rem;
       }
+    }
+
+    @media screen and (max-width: 576px) {
+      height: 60dvh;
+      justify-content: space-between;
     }
   }
 
@@ -90,9 +126,19 @@
       object-fit: cover;
       border-radius: 2rem;
 
+      @media screen and (max-width: 576px) {
+        width: 7rem;
+        height: 7rem;
+      }
+
       @media (min-width: 576px) and (max-width: 767.98px) {
         width: 10rem;
         height: 10rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 15rem;
+        height: 15rem;
       }
     }
 
@@ -104,9 +150,20 @@
       position: absolute;
       font-family: "Aboreto";
 
+      @media screen and (max-width: 576px) {
+        top: 20rem;
+        right: 0;
+        font-size: 7.15rem;
+      }
+
       @media (min-width: 576px) and (max-width: 767.98px) {
         right: 2rem;
         font-size: 10rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        right: 0;
+        font-size: 13rem;
       }
     }
 
@@ -153,9 +210,40 @@
           border: 0.1rem solid #fff3f9;
         }
 
+        @media screen and (max-width: 576px) {
+          top: 9rem;
+          left: 11rem;
+          width: 4rem;
+          height: 4rem;
+
+          svg{
+            &:nth-child(2){
+              width: 3rem;
+            }
+          }
+        }
+
         @media (min-width: 576px) and (max-width: 767.98px) {
           top: 9rem;
           left: 14rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          top: 11rem;
+          left: 19rem;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 12rem;
+        height: 6rem;
+
+        p {
+          font-size: 0.7rem;
+        }
+
+        h3 {
+          font-size: 0.8rem;
         }
       }
 
@@ -167,10 +255,11 @@
           font-size: 0.8rem;
         }
       }
-    }
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      // align-items: center;
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        width: 20rem;
+        height: 9rem;
+      }
     }
   }
 }
