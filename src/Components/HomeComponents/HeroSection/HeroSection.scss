@@ -59,7 +59,6 @@
       display: flex;
       align-items: center;
       border-radius: 0.5rem;
-      // padding-left: 0.1rem;
       justify-content: center;
       background-color: #ffb3c6;
 
@@ -100,6 +99,7 @@
       @media screen and (max-width: 576px) {
         width: 8rem;
         height: 1.9rem;
+        padding-left: 0.1rem;
       }
 
       @media (min-width: 576px) and (max-width: 767.98px) {
@@ -216,8 +216,8 @@
           width: 4rem;
           height: 4rem;
 
-          svg{
-            &:nth-child(2){
+          svg {
+            &:nth-child(2) {
               width: 3rem;
             }
           }
