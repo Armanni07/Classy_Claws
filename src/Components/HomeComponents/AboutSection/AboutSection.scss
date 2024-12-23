@@ -109,4 +109,11 @@
   &.in-view {
     animation: SliderLeft 1s linear 0s 1 normal forwards;
   }
+
+  @media screen and (max-width: 576px) {
+    gap: 2rem;
+    height: auto;
+    flex-direction: column;
+    width: calc(100vw - 5rem);
+  }
 }

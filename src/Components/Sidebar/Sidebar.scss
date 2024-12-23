@@ -63,13 +63,26 @@
       background-color: #ffb3c6;
       border-radius: 0.5rem 0 0 0.5rem;
       transition: all 0.3s ease-in-out;
-      animation: Slide .3s linear 0s 1 normal forwards;
+      animation: Slide 0.3s linear 0s 1 normal forwards;
 
       svg {
         width: 3.5rem;
         height: 3.5rem;
         color: #2c2a3e;
       }
+
+      @media screen and (max-width: 576px) {
+        width: 3rem;
+        animation: Slides 0.3s linear 0s 1 normal forwards;
+      }
     }
+
+    @media screen and (max-width: 576px) {
+      width: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 5rem;
   }
 }

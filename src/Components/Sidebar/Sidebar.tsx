@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./Sidebar.scss";
 import { www } from "../../Utils/URLS/Urls";
-// import { Info } from "../../Pages/Info/Info";
 import { useAuth } from "../../Hooks/UseAuth";
 import { server } from "../../Utils/Server/Server";
 import { method } from "../../Utils/Functions/Functions";

@@ -38,6 +38,15 @@
   }
 }
 
+@keyframes Slides {
+  from {
+    width: 3rem;
+  }
+  to {
+    width: 4rem;
+  }
+}
+
 @keyframes Slider {
   from {
     transform: translateX(100%);
