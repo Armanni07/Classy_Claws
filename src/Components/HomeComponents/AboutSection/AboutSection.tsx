@@ -1,7 +1,8 @@
+import { useEffect, useRef } from "react";
+
 import "./AboutSection.scss";
 import { useAuth } from "../../../Hooks/UseAuth";
 import Photo1 from "../../../Assets/IMG_9473.jpg";
-import { useEffect, useRef } from "react";
 import { method } from "../../../Utils/Functions/Functions";
 import { ClickType } from "../../../Utils/Types/FunctionTypes";
 
