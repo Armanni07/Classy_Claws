@@ -57,8 +57,6 @@ export const Products = () => {
       );
     });
 
-    console.log(count);
-
     setProductCount(count);
   }, [products.length, category]);
 
