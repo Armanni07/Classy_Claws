@@ -172,4 +172,25 @@
     content: "";
     animation: SlideOut 0.5s linear 0s 1 normal forwards;
   }
+
+  @media screen and (max-width: 576px) {
+    .left {
+      gap: 1rem;
+
+      .search {
+        width: 10rem;
+      }
+    }
+
+    .right {
+      .auth {
+        gap: 0.5rem;
+        justify-content: flex-end;
+
+        .button {
+          width: 5rem;
+        }
+      }
+    }
+  }
 }

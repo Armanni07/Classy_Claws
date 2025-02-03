@@ -59,7 +59,6 @@ export const ReviewSection = ({ login, setLogin }: ReviewType) => {
     if (option === "Nails") {
       const data2 = await server.get(`${www.sales.top}/products/Nails`);
 
-      console.log(data2);
       setNails(data2);
     }
 
@@ -105,14 +104,15 @@ export const ReviewSection = ({ login, setLogin }: ReviewType) => {
           ))}
         </span>
       </span>
+
       {option === "All" && (
         <span className={`review-grid ${hover && "active"} `}>
           {products?.map((product, i: number) => (
             <span
               key={i}
               className="review-item"
-              onMouseOut={() => setHover(false)}
               onMouseOver={() => setHover(true)}
+              onMouseOut={() => setHover(false)}
             >
               <img src={product.Image} alt="Loading..." />
 

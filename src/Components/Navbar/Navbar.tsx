@@ -12,9 +12,9 @@ import { useAuth } from "../../Hooks/UseAuth";
 import Logo from "../../Assets/CC-Logo-Light.png";
 import { server } from "../../Utils/Server/Server";
 import { Register } from "../Auth/Register/Register";
+import { Mail } from "../../Admin/Components/Mail/Mail";
 import { method } from "../../Utils/Functions/Functions";
 import { ProductsType } from "../../Admin/Pages/Products/Types";
-import { Mail } from "../../Admin/Components/Mail/Mail";
 
 export const Navbar = () => {
   const path = useLocation();

@@ -37,7 +37,7 @@ export const GallerySection = () => {
 
           <img src={Photo2} alt="" className="image bottom-left" />
         </span>
-
+ 
         <span className="gallery-right">
           <img src={Photo3} alt="" className="image top-right" />
 

@@ -3,6 +3,7 @@
   height: 100dvh;
   width: calc(100vw - 7rem);
   background-color: #2c2a3e;
+  height: calc(100dvh - 3.5rem);
 
   .cta-left {
     flex: 1;
@@ -62,6 +63,63 @@
         border-radius: 5rem;
         border: 0.1rem solid #ffb3c6;
         transform: rotate(-15deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .cta-left {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        width: 50%;
+      }
+    }
+
+    .cta-right {
+      .cta-image {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    .cta-left {
+      h1 {
+        text-wrap: balance;
+      }
+
+      p {
+        width: 55%;
+      }
+    }
+
+    .cta-right {
+      .cta-image {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    .cta-left {
+      h1 {
+        text-wrap: balance;
+      }
+
+      p {
+        width: 55%;
+      }
+    }
+
+    .cta-right {
+      .cta-image {
+        width: 20rem;
+        height: 20rem;
       }
     }
   }

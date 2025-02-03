@@ -41,15 +41,7 @@ export const Cart = () => {
     setTotal(data2[0]);
 
     const data3 = await server.get(`${www.sales.delivery}`);
-
-    data3.map((delivery: SalesType) => {
-      if (delivery.Status === "Sending") {
-        setDelivery(true);
-      } else {
-        setDelivery(false);
-      }
-    });
-    setTotal(data3[0]);
+    setDelivery(data3.some((item: SalesType) => item.Status === "Sending"));
   };
 
   const HandleBuy = async () => {
@@ -70,6 +62,7 @@ export const Cart = () => {
     if (!pathname.includes("/admin") && loggedIn) {
       GetData();
     }
+
     const fetchProductCounts = () => {
       const counts = cart.map((item) => {
         if (done) {

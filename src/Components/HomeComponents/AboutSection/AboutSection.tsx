@@ -32,8 +32,9 @@ export const AboutSection = ({ click, setClick }: ClickType) => {
 
       <span className="info-card">
         <h3>Premium Customizable Sets</h3>
+        
         <p>
-          In the future, we aim to provide Customizable nail sets are a unique
+          We provide Customizable nail sets are a unique
           offering that can instantly differentiate our brand. Allowing our
           customers to select length, shape, and color gives them a personalized
           experience that feels high-end and tailored to their preferences,
